@@ -1,40 +1,40 @@
 # 🧪 Cypress E2E — The Internet
 
-Projeto de **portfólio de QA** com automação de testes **fim-a-fim (E2E)** usando **Cypress**,
-aplicado ao app público e estável **[The Internet](https://the-internet.herokuapp.com)**.
+A **QA portfolio project** with **end-to-end (E2E) test automation** using **Cypress**,
+applied to the public, stable app **[The Internet](https://the-internet.herokuapp.com)**.
 
-> Demonstra a **2ª ferramenta de automação** (além do Playwright) com as boas práticas de
-> mercado: Page Objects, fixtures/config de credenciais por ambiente e CI no GitHub Actions.
+> Demonstrates the **2nd automation tool** (alongside Playwright) with market best
+> practices: Page Objects, environment-based credentials and CI on GitHub Actions.
 
 ## 🚀 Stack
 
-- **Cypress** (`v13`) — automação E2E
-- **Page Objects** — seletores reutilizáveis e organizados
-- **Variáveis de ambiente** — credenciais via `env` na configuração (nada versionado)
-- **GitHub Actions** — executa a suíte e publica vídeos e screenshots como artefatos
+- **Cypress** (`v13`) — E2E automation
+- **Page Objects** — reusable, organized selectors
+- **Environment variables** — credentials via `env` in config (nothing versioned)
+- **GitHub Actions** — runs the suite and publishes videos and screenshots as artifacts
 
-## ✅ O que é coberto
+## ✅ What is covered
 
-| Feature | Cenários |
+| Feature | Scenarios |
 |---|---|
-| **Login** | Sucesso com credenciais válidas · mensagem de erro com credenciais inválidas |
-| **Checkboxes** | Marcar a 1ª checkbox · desmarcar a 2ª checkbox |
-| **Dropdown** | Selecionar a 1ª e a 2ª opção |
+| **Login** | Success with valid credentials · error message with invalid credentials |
+| **Checkboxes** | Check the 1st checkbox · uncheck the 2nd checkbox |
+| **Dropdown** | Select the 1st and the 2nd option |
 
-## 📁 Estrutura
+## 📁 Structure
 
 ```
 ├── cypress/
 │   ├── e2e/                 # specs (login, checkboxes, dropdown)
 │   ├── support/
-│   │   ├── e2e.js           # suporte global
+│   │   ├── e2e.js           # global support
 │   │   └── pages/           # Page Objects
-│   └── videos/ screenshots/ # evidências geradas (ignoradas no git)
-├── cypress.config.js        # baseUrl + env (credenciais)
+│   └── videos/ screenshots/ # generated evidence (git-ignored)
+├── cypress.config.js        # baseUrl + env (credentials)
 └── .github/workflows/       # CI
 ```
 
-## ▶️ Como rodar
+## ▶️ How to run
 
 ```bash
 npm install
@@ -42,21 +42,21 @@ npm install
 # Terminal (headless, CI-like)
 npm run test
 
-# Interface gráfica do Cypress
+# Cypress open (graphical interface)
 npm run test:open
 ```
 
-### Credenciais
+### Credentials
 
-O app demo The Internet usa as credenciais fixas `tomsmith` / `SuperSecretPassword!`,
-definidas em `cypress.config.js` via `env`. Para outros ambientes, substitua por
-variáveis de ambiente no seu CI (nunca valores reais versionados).
+The demo app The Internet uses the fixed credentials `tomsmith` / `SuperSecretPassword!`,
+set in `cypress.config.js` via `env`. For other environments, replace them with environment
+variables in your CI (never real values versioned).
 
 ## 🤖 CI (GitHub Actions)
 
-A pipeline roda `npx cypress run` (headless) e publica **vídeos** de todas as runnes e
-**screenshots** das que falharem como artefatos — evidências para auditoria de QA.
+The pipeline runs `npx cypress run` (headless) and publishes **videos** of all runs and
+**screenshots** of failing ones as artifacts — QA audit evidence.
 
 ---
 
-**Autoria:** Jessica Sales · QA
+**Author:** Jessica Sales · QA
