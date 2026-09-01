@@ -1,7 +1,7 @@
 {
   "name": "cypress-e2e-the-internet",
   "version": "1.0.0",
-  "description": "Portfólio QA — Automação E2E com Cypress. Suíte de testes contra o app The Internet (login, checkboxes, dropdown), com Page Objects, fixtures e CI no GitHub Actions.",
+  "description": "QA Portfolio \u2014 E2E automation with Cypress. Test suite against the The Internet app (login, checkboxes, dropdown), using Page Objects, fixtures and CI on GitHub Actions.",
   "author": "Jessica Sales",
   "license": "MIT",
   "private": true,

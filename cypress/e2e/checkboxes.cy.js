@@ -5,12 +5,12 @@ describe('Checkboxes', () => {
     CheckboxesPage.visit();
   });
 
-  it('marca a primeira checkbox', () => {
+  it('checks the first checkbox', () => {
     CheckboxesPage.check(1);
     CheckboxesPage.shouldBeChecked(1, true);
   });
 
-  it('desmarca a segunda checkbox (que inicia marcada)', () => {
+  it('unchecks the second checkbox (which starts checked)', () => {
     CheckboxesPage.uncheck(2);
     CheckboxesPage.shouldBeChecked(2, false);
   });

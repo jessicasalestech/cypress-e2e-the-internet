@@ -1,2 +1,2 @@
-// Suporte global do Cypress.
-// Registre aqui hooks e custom commands que valem para todos os specs.
+// Global Cypress support.
+// Register hooks and custom commands that apply to all specs here.

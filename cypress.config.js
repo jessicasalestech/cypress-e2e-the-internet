@@ -5,7 +5,7 @@ module.exports = defineConfig({
     baseUrl: 'https://the-internet.herokuapp.com',
     defaultCommandTimeout: 10_000,
     env: {
-      // credenciais válidas do app demo The Internet
+      // valid credentials for the The Internet demo app
       usuarioValido: 'tomsmith',
       senhaValida: 'SuperSecretPassword!',
     },

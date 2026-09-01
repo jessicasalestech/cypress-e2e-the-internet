@@ -5,12 +5,12 @@ describe('Dropdown', () => {
     DropdownPage.visit();
   });
 
-  it('seleciona a primeira opção', () => {
+  it('selects the first option', () => {
     DropdownPage.selectOption('Option 1');
     DropdownPage.selectedText().should('have.text', 'Option 1');
   });
 
-  it('seleciona a segunda opção', () => {
+  it('selects the second option', () => {
     DropdownPage.selectOption('Option 2');
     DropdownPage.selectedText().should('have.text', 'Option 2');
   });

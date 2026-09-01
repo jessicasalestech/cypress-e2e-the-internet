@@ -32,7 +32,7 @@ jobs:
       - name: Run Cypress E2E (headless)
         run: npx cypress run
 
-      - name: Publicar vídeos (artefato)
+      - name: Publish videos (artifact)
         if: always()
         uses: actions/upload-artifact@v7
         with:
@@ -40,7 +40,7 @@ jobs:
           path: cypress/videos
           retention-days: 14
 
-      - name: Publicar screenshots de falhas (artefato)
+      - name: Publish failure screenshots (artifact)
         if: failure()
         uses: actions/upload-artifact@v7
         with:

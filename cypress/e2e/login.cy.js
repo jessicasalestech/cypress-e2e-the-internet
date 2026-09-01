@@ -5,7 +5,7 @@ describe('Login', () => {
     LoginPage.visit();
   });
 
-  it('realiza login com credenciais válidas', () => {
+  it('logs in with valid credentials', () => {
     LoginPage.fillCredentials(Cypress.env('usuarioValido'), Cypress.env('senhaValida'));
     LoginPage.submit();
     LoginPage.successFlash()
@@ -13,7 +13,7 @@ describe('Login', () => {
       .and('contain.text', 'You logged into a secure area');
   });
 
-  it('exibe mensagem de erro com credenciais inválidas', () => {
+  it('shows an error message with invalid credentials', () => {
     LoginPage.fillCredentials('usuario_invalido', 'senha_errada');
     LoginPage.submit();
     LoginPage.errorFlash()
