@@ -1,5 +1,7 @@
 # 🧪 Cypress E2E — The Internet
 
+[![English](https://img.shields.io/badge/English-blue?style=plastic&logo=openbadges&logoColor=white)](README.md) [![Português](https://img.shields.io/badge/Portugu%C3%AAs-green?style=plastic&logo=openbadges&logoColor=white)](README-pt-BR.md)
+
 A **QA portfolio project** with **end-to-end (E2E) test automation** using **Cypress**,
 applied to the public, stable app **[The Internet](https://the-internet.herokuapp.com)**.
 
